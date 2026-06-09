@@ -11,7 +11,11 @@ A custom, from-scratch implementation of the K-Means clustering algorithm in Jav
 4. [Getting Started](#-getting-started)
 
 ---
+## About K-Means Clustering
+**K-Means** is a popular unsupervised machine learning algorithm used to group unlabelled data into $K$ distinct, non-overlapping clusters. It works by iteratively assigning data points to the nearest cluster centroid (center point) and then recalculating those centroids based on the new cluster boundaries.
 
+The goal of the algorithm is to minimize the total variance (or error)—meaning it tries to keep the data points within each cluster as close to their centroid as possible. In this project, K-Means is used to discover spatial patterns in 2D geometric data using Euclidean distance!
+---
 ##  Features
 * **Synthetic Data Generation:** Generates 1,200 data points clustered within specific geometric rectangles to simulate a real-world dataset.
 * **Algorithmic Optimization:** To avoid falling into local minima, the algorithm runs 15 separate times for each $K$ value, automatically selecting the iteration with the lowest total error.
