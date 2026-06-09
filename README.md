@@ -9,7 +9,6 @@ A custom, from-scratch implementation of the K-Means clustering algorithm in Jav
 2. [How It Works](#-how-it-works)
 3. [Project Structure](#-project-structure)
 4. [Getting Started](#-getting-started)
-5. [Source Code](#-source-code)
 
 ---
 
@@ -29,7 +28,29 @@ A custom, from-scratch implementation of the K-Means clustering algorithm in Jav
 4. **Iteration:** Steps 2 and 3 are repeated until the centroids stabilize (up to 1,000 iterations).
 
 ---
+## Getting Started
 
+### Prerequisites
+* **Java Development Kit (JDK):** Version 8 or higher.
+* **JFreeChart Library:** Because this project creates graphical plots, you must download the `jfreechart` and `jcommon` `.jar` files and include them in your project's build path/dependencies.
+
+### Installation & Execution
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/yourusername/K-Means-Clustering.git](https://github.com/yourusername/K-Means-Clustering.git)
+   cd K-Means-Clustering
+   ```
+2. **Compile the code:**
+Ensure your classpath includes the JFreeChart libraries, then compile all Java files:
+```bash
+javac -cp ".:path/to/jfreechart.jar:path/to/jcommon.jar" *.java
+```
+3. **Run the program:**
+Execute the Main class to run the algorithms and generate the plots:
+```bash
+java -cp ".:path/to/jfreechart.jar:path/to/jcommon.jar" Main
+```
+Upon running, the program will calculate the optimal clusters and open four separate Swing windows displaying the scatter plots for 3, 6, 9, and 12 clusters. You can check your console output to see the minimized error values for each iteration.
 ##  Project Structure
 
 ```text
@@ -39,3 +60,4 @@ A custom, from-scratch implementation of the K-Means clustering algorithm in Jav
 ├── Entry.java                  # Represents a single (x,y) data point
 ├── K_Means.java                # Core clustering algorithm and logic
 └── Main.java                   # Entry point, runs the algorithm for K=3,6,9,12
+```
