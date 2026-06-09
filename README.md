@@ -1,5 +1,9 @@
 #  K-Means Clustering Visualization in Java
 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![JFreeChart](https://img.shields.io/badge/Library-JFreeChart-blue?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-Clustering-black?style=for-the-badge)
+
 A custom, from-scratch implementation of the K-Means clustering algorithm in Java. This project generates synthetic 2D spatial data, applies the K-Means algorithm to find optimal cluster centers, and visualizes the results using graphical scatter plots.
 
 ---
